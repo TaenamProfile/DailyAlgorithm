@@ -1,5 +1,7 @@
-arr = []
+from collections import Counter
 
-for i in range(10):
-    arr.append(int(input()))
-    num = i % 42
+arr = []
+for _ in range(10):
+    arr.append(int(input())%42)
+#print(Counter(arr))
+print(len(Counter(arr)))
